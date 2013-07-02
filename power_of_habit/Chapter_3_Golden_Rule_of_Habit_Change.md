@@ -47,3 +47,44 @@
 
 
     "As AA's methods have spread, they've been refined into therapies that can be used to disrupt almost any pattern".
+
+## Belief: the Secret Sauce
+
+The cue - new routine - reward cycle is essential for habit change. But it's not enough
+
+Duhigg cites story after story to support the idea that **belief** is critical for **durable** habit changes
+
+Even years after the cue - new routine - reward cycle is established:
+ - People fall off the wagon (Alcoholics, eg)
+ - People resort to past ingrained behaviors (The Tony Dungy playoff examples)
+ - Old routines emerge
+
+Frequently, the trigger is **stress** and anxiety. Example:
+ - Sober for years
+ - Mom dies
+ - Back on the bottle as a way to forget / relieve pain
+
+ Another:
+
+ - football players spend years practicing to make behaviors automatic (Tony Dungy)
+ - Playoffs, high-stress, game on the line
+ - players start to **think** instead of relying on habits that got them this far
+
+The point here seems to be that when you get all up in your head, that's a trigger for reverting to old routines.
+
+So how to overcome?
+
+**Belief** that change is feasible.
+
+Belief grows out of **communal experience**
+ - Belief is easier when it occurs within a community
+
+This is, in fact, the cornerstone of AA meetings and sponsors!
+
+In the Dungy example, it was his son's death that brought his team together.
+
+The teams he coached up till this point, in high pressure games, would **doubt** the effectiveness of Dungy's habit-based approach. They'd revert to thinking, causing them wasted milliseconds (Remember: Dungy's point was that if he could build the fastest-reacting team, no one could beat them).
+
+When they saw how he kept it together after his son's death, they started believing that anything was possible. The team rallied around the coach, but more importantly they rallied themselves.
+
+**Belief helps habits stick**
