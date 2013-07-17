@@ -1,6 +1,4 @@
-http://www.slideshare.net/mikebrittain/metrics-driven-engineering
-
-http://www.usievents.com/en/conferences/12-paris-usi-2013/sessions/1079-metrics-driven-engineering
+Watch: (30 minutes) http://www.usievents.com/en/conferences/12-paris-usi-2013/sessions/1079-metrics-driven-engineering
 
 Mike Brittain
 
