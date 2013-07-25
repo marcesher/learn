@@ -295,7 +295,7 @@ My question re: dev and security relationship
 
 look on itrevolution and go watch "amazing twitter infosec talk"
 
-### Other stuff that came up in discussion
+### Other discussion points 
 
 - Use application logs to demonstrate to developers the frequency of hack attempts on the sites
   - xss, sql injection, etc
