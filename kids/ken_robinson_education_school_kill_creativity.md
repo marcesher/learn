@@ -30,3 +30,5 @@ http://www.ted.com/talks/ken_robinson_says_schools_kill_creativity.html
 - Intelligence is not just the mind
 
 - Our task is to educate the whole being
+
+- Reminds me of this, which I read yesterday: http://onsystems.tumblr.com/post/65796540746/on-kelly-and-why-shes-smart-er-than-us
