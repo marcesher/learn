@@ -32,3 +32,4 @@
   1. Effective Go: http://golang.org/doc/effective_go.html
   1. Work through the Go / Angular preso again: http://blog.campoy.cat/2013/12/writing-moder-web-app-with-go-tdd-rest.html
   1. Create a sample REST API for something dumb
+  1. Read through some of the code recommended by Jeff Hodges: http://www.somethingsimilar.com/2013/12/27/code-to-read-when-learning-go/
