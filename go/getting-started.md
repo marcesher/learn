@@ -29,7 +29,183 @@
 
   1. Go tour: I'm going to do this locally with `go tool tour`. 
   1. Browse through some FAQs really fast to get a whirlwind: http://golang.org/doc/faq
+  1. Read the language spec. No need to go super deep just yet... this is a first date. http://golang.org/ref/spec
   1. Effective Go: http://golang.org/doc/effective_go.html
   1. Work through the Go / Angular preso again: http://blog.campoy.cat/2013/12/writing-moder-web-app-with-go-tdd-rest.html
   1. Create a sample REST API for something dumb
   1. Read through some of the code recommended by Jeff Hodges: http://www.somethingsimilar.com/2013/12/27/code-to-read-when-learning-go/
+
+## Some impressions
+
+1. I *really* like go's implementation of multiple returns as well as naming those return values in the function signature:
+
+```
+func split(sum int) (x, y int) {
+    x = sum * 4 / 9
+    y = sum - x
+    return
+}
+```
+
+1. The var initialization syntax for multiple vars is kinda weird, though perhaps it discourages getting out of control (i.e. incents simplicity)
+
+```
+var x, y, z int = 1, 2, 3
+var c, python, java = true, false, "no!"
+```
+
+1. I like the formatters, eg %T for type:
+
+```
+const f = "%T(%v)\n"
+fmt.Printf(f, ToBe, ToBe)
+fmt.Printf(f, MaxInt, MaxInt)
+```
+
+1. I love that Go requires {} for `for` loops and `if` statements
+
+```
+for i := 0; i < 10; i++ {
+  fmt.Println(i)
+}
+
+1. Go's while loop is a simplified for loop. Makes sense:
+
+```
+sum := 1
+for sum < 1000 {
+    sum += sum
+}
+```
+
+To infinitely loop, simply:
+
+```
+for {
+}
+```
+
+1. assignments in if statements is pretty slick:
+
+```
+if v := math.Pow(x, n); v < lim {
+        return v
+    }
+```
+
+But be careful: those vars are only in scope for the duration of the `if` / `if/else` statement (You'd get `undefined: v` if you try to use it after the if)
+
+1. I like the explicitness of pointers with structs. If you want a pointer, use &. Otherwise, it's a copy.
+There's zero confusion about reference/value semantics. I also like that when you `fmt.Println` a referenced var, it prints the `&`
+
+
+
+1. I like the idiom of using `()` for grouping:
+
+```
+import ()
+var (
+  x, y int
+  b, c string
+)
+```
+
+and so forth
+
+
+1. Slices remind me of groovy
+
+```
+p := []int{2, 3, 5, 7, 11, 13}
+fmt.Println(p[:4])
+fmt.Println(p[2:5])
+fmt.Println(p[1:])
+```
+
+**Note**: Creating a new clice variable, such as with `q := p[2:5]`, is a reference to the same underlying array. It is not a copy.
+
+
+**Be Careful**: range semantics might seem weird: Subtract 1 from the right hand to get the true slice;
+eg q[lo:lo] would actually be empty, q[lo:lo+1] would be a 1-element slice, and q[1:5] will get you elements from 1-4.
+
+From the tour:
+
+```
+s[lo:hi]
+evaluates to a slice of the elements from lo through hi-1, inclusive.
+```
+
+1. `make()`, len, and capacity: might not be what you might think it might be (how's that for hedging)
+
+`q := make(int[], 3, 10)` will give you the 3-element slice, but you'll get `index out of range` if you try to set a value after element 3
+I'm guessing there's an `Append` or some such thing, b/c otherwise I can't see the point of a slice with a different `len` and `cap`
+
+Docs link to this:  http://blog.golang.org/go-slices-usage-and-internals, so go read that eventually
+
+
+1. range in a for loop requires index and value variables
+
+` for i, v := range some_slice {}`
+
+if you do this, you need to use both the index and the value, not just the value, else you get 'i declared but not used'.
+I wonder how you iterate a range and just access the value
+
+
+1. Slice exercise
+
+My simple solution is here: https://gist.github.com/marcesher/8170295
+
+## Questions after taking the Go tour
+
+1. In a range for loop, can you iterate without needing the index? (i.e. for x in range some_slice)
+1. What simple hacks are people using to auto-build go, such that you can effectively use it as a scripting language?
+
+## Error messages
+
+1. Missing a return type. eg:
+
+ ```
+ ./compile21.go:10: too many arguments to return
+ ./compile21.go:14: add2(42, 13, 0) used as value
+ ```
+
+ example:
+
+ ```func add(x, y int) {
+     return x + y
+    }
+ ```
+
+Same ` too many arguments to return` goes for mismatch between declared multi return types and what you actually return:
+
+```
+func swap2(x, y string) (string, string, string) {
+    return y, x, "hi", "bob"
+}
+```
+
+`not enough arguments to return` for cases like:
+
+```
+func swap2(x, y string) (string, string) {
+    return y
+}
+```
+
+1. Not explicit about pointer
+
+```
+type Vertex struct {
+    X, Y int
+}
+
+var t Vertex = new(Vertex)
+```
+
+will issue:
+
+`cannot use new(Vertex) (type *Vertex) as type Vertex in assignment`
+
+Instead, use:
+
+`var t *Vertex = new(Vertex)`
