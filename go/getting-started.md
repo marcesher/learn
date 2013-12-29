@@ -68,6 +68,7 @@ fmt.Printf(f, MaxInt, MaxInt)
 for i := 0; i < 10; i++ {
   fmt.Println(i)
 }
+```
 
 1. Go's while loop is a simplified for loop. Makes sense:
 
