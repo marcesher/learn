@@ -156,10 +156,93 @@ I wonder how you iterate a range and just access the value
 
 My simple solution is here: https://gist.github.com/marcesher/8170295
 
+
+1. Use `make` to make maps
+
+of the form: make(map[key-type]Value-type)
+
+eg:
+
+`m = make(map[string]Vertex)`
+
+1. Map literals are still strongly typed:
+
+```
+var p = map[string]Vertex{
+    "marc": Vertex{20,20},
+    "heather": Vertex{15,15},
+}
+```
+
+Holy hell that looks redundant. Why not just "marc": {20,20} since we've already declared the type of the Map?
+
+Oh, look... you can!
+
+```
+var p = map[string]Vertex{
+    "marc": {20,20},
+    "heather": {15,15},
+}
+```
+
+1. map delete and test
+
+`delete(map, key)` to remove a map element. Test for existence with 2-value assignment: `elem, ok = m[key]`
+
+
+1. Wordcount exercise... my solution is hideous
+
+https://gist.github.com/marcesher/8171076
+
+Surely there's a more elegant solution. Upside: this led me to learn how to use the blank identifier in range loops
+
+1. Functions are values and can be declared and also used as closures
+
+```
+func main(){
+
+  doit := func(x int, y float64) float64 { ... return blah }
+...
+}
+
+func add(x, y int) func(int) int{
+  return func(x int) int {...}
+}
+```
+
+**Notice how the return type of add() specifies the closure signature**
+
+1. Switch can use the same assignment semantics as `if`
+
+switch os := runtime.GOOS; os {...
+
+1. Switch does not require a `break`
+
+Sensible! It simply stops on the first matched case
+
+1. Switch without a condition can be used for cleaner long if/else statements:
+
+http://127.0.0.1:3999/#46
+
+I like this!
+
 ## Questions after taking the Go tour
 
 1. In a range for loop, can you iterate without needing the index? (i.e. for x in range some_slice)
+
+
+Answer: use `_`, which is the *blank identifier* (http://golang.org/doc/effective_go.html#for):
+
+```
+for _, v := range some_slice {}
+```
+
+
 1. What simple hacks are people using to auto-build go, such that you can effectively use it as a scripting language?
+
+
+
+
 
 ## Error messages
 
