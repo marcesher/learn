@@ -14,7 +14,6 @@ http://randsinrepose.com/links/2013/12/18/the-worst-conversation-youre-ever-goin
   - it's the entire team. Perhaps they have the same problem with this person that you do
   - This also damages your credibility as a leader
   - People know you're not dealing with the problem
-  - Think of my time at BR... this was huge with respect to how we saw "leadership" eventually
 
 3. No surprises
 
