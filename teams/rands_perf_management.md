@@ -67,8 +67,8 @@ http://randsinrepose.com/links/2013/12/18/the-worst-conversation-youre-ever-goin
    - simply writing a plan and throwing the person into the deep end doesn't make sense. It's not realistic to expect fast, flip-switch change. People don't work that way
  - He doesn't talk about it directly, but it's implied: this is why 1:1s are so important... this is probably the simplest way to identify and deal with these problems earlier rather than later
  - For his bit on repeaters offenders, it reminds me of something a former exec said to me once: "You can't rotate a bald tire"
- - Lopp's talk is the end-state, the "what to do when you've already screwed up" talk. To avoid this, I recommend Dale Dauten's "Great Employees Only": http://www.amazon.com/Great-Employees-Only-De-Hire-Success/dp/0470007885
-    - Which reminds me... I should reread this
+ - Lopp's talk is the end-state, the "what to do when you've already screwed up" talk. For the precursor, I'm reminded of Dale Dauten's "Great Employees Only": http://www.amazon.com/Great-Employees-Only-De-Hire-Success/dp/0470007885
+    - I should reread this
     - Remember how Lopp says that one cost of not addressing a problem is the damage to your credibility as a leader? Here's what Dauten says:
 
     "A mediocre employee in your group is more than one mediocre employee--he or she is a human multiplier-effect, to the downside. If you have even one mediocre employee, you have announced to the world that mediocrity is okay by you, while conceding that you are willing to slow the entire group for the sake of the worst employee. Thus, allowing that one person to stay is not being kind or generous; it's dangerous. It's dangerous for the individual, who knows that, at some level, he or she is doing second-rate work, and who you are locking into mediocrity, and it is dangerous for the group, which is slowed and distracted."
