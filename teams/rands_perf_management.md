@@ -62,7 +62,8 @@ http://randsinrepose.com/links/2013/12/18/the-worst-conversation-youre-ever-goin
 ## Thoughts
 
  - I saw the reputation cost of not dealing with problems first hand, repeatedly, at BR. It had a nightmarish effect on some people
- - I've seen similar in the past 6 months, although the effect was different (not in a good way), more along the lines of simply losing faith / trust, leading to less energy and more hands-tied-what-can-i-do-welcome-to-the-government resignation
+ - I've also seen less drastic damage, more along the lines of simply losing faith / trust, leading to less energy and more hands-tied-what-can-i-do resignation
+ - I suspect the difference in degree is related to whether the problem of dealing with problems is systemic or acute
  - Lopp's 3-month, 3-phase approach for a PIP makes sense
    - simply writing a plan and throwing the person into the deep end doesn't make sense. It's not realistic to expect fast, flip-switch change. People don't work that way
  - He doesn't talk about it directly, but it's implied: this is why 1:1s are so important... this is probably the simplest way to identify and deal with these problems earlier rather than later
