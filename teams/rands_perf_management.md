@@ -7,16 +7,16 @@ http://randsinrepose.com/links/2013/12/18/the-worst-conversation-youre-ever-goin
 
 - don't be entrepreneurial about firing someone... ask for help
 
-- 1. "Your job = your people"
+1. "Your job = your people"
 
-- 2. You're understimating the cost of not dealing with a problem
+2. You're understimating the cost of not dealing with a problem
   - it's not just you and your problem person
   - it's the entire team. Perhaps they have the same problem with this person that you do
   - This also damages your credibility as a leader
   - People know you're not dealing with the problem
   - Think of my time at BR... this was huge with respect to how we saw "leadership" eventually
 
-- 3. No surprises
+3. No surprises
 
   - What action have you already taken to address this?
   - It should not be a surprise to someone when they get stuck on a "performance plan" or whatever you call it
@@ -33,7 +33,7 @@ http://randsinrepose.com/links/2013/12/18/the-worst-conversation-youre-ever-goin
   - Instead, create a well defined list of quanifiable things... written
     - Sure, there will be fuzzier, more subjective things... but keep those to a minimum
 
-- 4. A PIP should feel like a formality
+4. A PIP should feel like a formality
   - We've done all these other things, now we're getting formal
 
 - The PIP
@@ -46,17 +46,17 @@ http://randsinrepose.com/links/2013/12/18/the-worst-conversation-youre-ever-goin
      - Month 3: on their own
 
 
-- 5. If you have to let someone go, don't fear about the void they leave
+5. If you have to let someone go, don't fear about the void they leave
 
    - someone will step up to fill that role
 
-- 6. Everybody knows, but: assume no one knows
+6. Everybody knows, but: assume no one knows
 
    - You must crush "rumint" (rumor intelligence)
    - talk directly to affected people
    - talk in a group to people who care / are interested
 
-- 7. Get better
+7. Get better
 
   - If you get to a PIP, you need to figure out how you screwed up to let it get that far
 
