@@ -1,5 +1,7 @@
 http://www.youtube.com/watch?v=wyWI3gLpB8o
 
+http://flowcon.org/dl/flowcon-sanfran-2013/slides/AdrianCockcroft_VelocityAndVolumeorSpeedWins.pdf
+
 Adrian Cockcroft (Netflix)
 
 # Velocity and Volume (Speed Wins)
