@@ -226,6 +226,43 @@ http://127.0.0.1:3999/#46
 
 I like this!
 
+
+1. Go has no classes
+
+- You can define methods on any custom type, however.
+- can only define methods on types in current package; can't define methods on simple types
+
+```
+type MyThing float64
+
+func (t MyThing) Abs() float64 {
+...
+}
+a := MyThing(5)
+a.Abs()
+```
+
+The first arg-looking thing in that `func` is the *method receiver*... it's the type that's receiving the function
+
+1. Method receivers that are pointers are a way to achieve state
+
+Given a method with a pointer method receiver:
+
+```
+func (v *Vector) Scale(f float64) float64 {
+  v.X = ...
+  v.Y = ...
+}
+
+v := &Vector{3, 4}
+v.Scale(5)
+fmt.Println(v, v.Abs())
+```
+
+the method receiver needs to be a pointer for `Scale()` to mutate the values on `v`. Otherwise, if the receiver is a value type instead of a pointer, Scale is effectively noop
+
+
+
 ## Questions after taking the Go tour
 
 1. In a range for loop, can you iterate without needing the index? (i.e. for x in range some_slice)
@@ -255,9 +292,10 @@ for _, v := range some_slice {}
 
  example:
 
- ```func add(x, y int) {
+ ```
+ func add(x, y int) {
      return x + y
-    }
+ }
  ```
 
 Same ` too many arguments to return` goes for mismatch between declared multi return types and what you actually return:
