@@ -261,7 +261,78 @@ fmt.Println(v, v.Abs())
 
 the method receiver needs to be a pointer for `Scale()` to mutate the values on `v`. Otherwise, if the receiver is a value type instead of a pointer, Scale is effectively noop
 
+1. "An interface type is defined by a set of methods"
 
+Syntax:
+
+```
+type Abser interface {
+    Abs() float64
+}
+```
+
+Now, one thing in the Tour example that I need to beat into my brain is that if you define a method on a type, **the method receiver type determines whether a type satisfies an interface**
+
+For example, given the above interface
+
+```
+func (v *Vector) Abs() {
+
+}
+```
+
+**will not satisfy** the interface because the method is defined  with a pointer receiver type, not the value type (i.e. v *Vector, not v Vector)
+
+1. A type doesn't declare its intent to implement an interface
+
+Unlike Java, with an explicit `implements`, a type implements an interface if it implements the interface's methods. i.e. show, don't tell
+
+
+1. I **think** interfaces are composable
+
+```
+type Reader interface {
+    Read(b []byte) (n int, err error)
+}
+
+type Writer interface {
+    Write(b []byte) (n int, err error)
+}
+
+type ReadWriter interface {
+    Reader
+    Writer
+}
+```
+
+reads to me that a ReadWriter interface is an interface defined by having all the methods of Reader and Writer, in this case Read() and Write()
+
+
+1. To provide error reporting capability to a type, simply implement Error():
+
+```
+type MyError struct {...}
+func (err *MyError) Error() string {
+  return "Whoops"
+}
+
+```
+
+1. For http, when you add handlers, just pass `nil` to ListenAndServe
+
+`http.ListenAndServe("localhost:4000", nil)`
+
+simple http handler exercise here: https://gist.github.com/marcesher/8315820
+
+1. rot13 Exercise
+
+https://gist.github.com/marcesher/8316237
+
+I did it the easy way first, which is simply comparing the byte to the upper and lowercase versions of the letters
+
+Then I experimented with lower-casing the byte (http://golang.org/pkg/strings/#ToLower)
+
+Doing this, I learned from https://groups.google.com/forum/#!topic/golang-nuts/84GCvDBhpbg that to convert variable v to type T, use `T(v)`
 
 ## Questions after taking the Go tour
 
@@ -277,11 +348,17 @@ for _, v := range some_slice {}
 
 1. What simple hacks are people using to auto-build go, such that you can effectively use it as a scripting language?
 
+1. Does go have something like list comprehensions? Kickass operators ala groovy? (http://groovy.codehaus.org/Operators)
 
 
 
 
 ## Error messages
+
+1. go install: no install location for directory [go-workspace]/src/github.com/marcesher/http outside GOPATH
+
+I got this when I had set my GOPATH to a subdirectory of my go workspace instead of at the root. Stupid mistake.
+
 
 1. Missing a return type. eg:
 
