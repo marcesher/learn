@@ -334,6 +334,103 @@ Then I experimented with lower-casing the byte (http://golang.org/pkg/strings/#T
 
 Doing this, I learned from https://groups.google.com/forum/#!topic/golang-nuts/84GCvDBhpbg that to convert variable v to type T, use `T(v)`
 
+
+1. Concurrency: Go Routines
+
+`go someFunc(x, y, z)`
+
+Nice!
+
+Seems semantically equivalent to Java's `new SomeRunnable(x, y, z).start()`, with the obvious difference that we can use functions as first class citizens and don't require a class
+
+
+1. Channels
+
+you can do
+
+```
+c := make(chan int)
+go someFunc(x, y, z, c)
+
+and then someFunc will do what it does and send a result to the channel:
+
+func someFunc(x, y, z int, c chan int) {
+    sum := 0
+    ...
+    c <- sum // send sum to c
+}
+```
+
+To send to a channel: `ch <- v`
+
+To receive from a channel and assign the result to a var: `v := <-ch`
+
+I like the syntax here... same operator, and the operation is determined by `ch`'s position. Visually it makes sense to me
+
+On Slide #66, if I change the buffer size to 1, I get the `all goroutines are asleep` error. Why is that? I need to understand these more clearly
+
+
+1. Channels: Range and Close
+
+To pull values off of a channel until it closes:
+
+```for i := range c {
+...
+```
+
+and then the sender can close the channel with `close(c)`
+
+Tour says that the sender should only ever close the channel, not the receiver, and that `close()` is typically not needed unless you need to terminate a range loop. I guess here's a case where the tight coupling between sender and receiver -- that the receiver expects the sender to close the channel -- is appropriate
+
+
+1. Select
+
+"lets a goroutine wait on multiple communication operations".
+
+In the tour example, they use multiple channels passed to the function, and then an endless loop (`for {}`) with a `select` inside of it with cases
+
+For the first case, it pulls off the first channel
+
+For the second case, it pulls off the `quit` channel.
+
+I think what this means is that if it can pull off the first channel, it will. And then once that case no longer applies, it drops down to the next case, which looks for the quit having a value.
+
+When that condition is satisfied, the `return` statement kicks in and the function completes.
+
+**Is this equivalent to scala's actors, with `receive` and case classes?** I don't think so. I think it looks like it, but channel semantics seem to be much different from actor semantics, and I'm getting head-faked by the loop/case idiom
+
+1. Select can have a default
+
+Makes sense. See Slide #69
+
+Now, when I first looked at this slide, I was confused. But the semantics all looked like channels, so I figured that time.Tick() must return a channel. It does: http://golang.org/pkg/time/#Tick
+
+
+Wrapping up:
+
+```
+select {
+        case <-tick:
+            fmt.Println("tick.")
+        case <-boom:
+            fmt.Println("BOOM!")
+            return
+        default:
+            fmt.Println("    .")
+            time.Sleep(50 * time.Millisecond)
+        }
+```
+
+In the above, if something can be retrieved from the tick channel, that case trips. If something can be retrieved from the boom channel, that case trips and return ends the function. otherwise, if nothing can be pulled from those channels, the loop continues
+
+
+1. Headless functions
+
+Go's headless, built-in functions are documented in package `builtin`: http://golang.org/pkg/builtin/#cap
+
+
+
+
 ## Questions after taking the Go tour
 
 1. In a range for loop, can you iterate without needing the index? (i.e. for x in range some_slice)
@@ -346,11 +443,17 @@ for _, v := range some_slice {}
 ```
 
 
+
+
 1. What simple hacks are people using to auto-build go, such that you can effectively use it as a scripting language?
 
 1. Does go have something like list comprehensions? Kickass operators ala groovy? (http://groovy.codehaus.org/Operators)
 
+1. For channels, how do you deal with errors?
 
+1. What are go architectural idioms for dealing with backpressure in distributed systems?
+
+1. I need to learn more about buffered channels. I don't understand why Go tour #66 gives the `all routines are asleep` error message when changing the buffer size to 1
 
 
 ## Error messages
@@ -408,3 +511,21 @@ will issue:
 Instead, use:
 
 `var t *Vertex = new(Vertex)`
+
+1. goroutine doesn't add result to channel
+
+`fatal error: all goroutines are asleep - deadlock!`
+
+For example:
+
+```
+func sum(a []int, c chan int) {
+    sum := 0
+    ...
+    //c <- sum // send sum to c
+}
+```
+
+Since nothing's put on the channel, attempts to take results off the channel will issue the error above
+
+Note that it comes from a line like this (in the go tour): `x, y := <-c, <-c // receive from c`
