@@ -27,15 +27,16 @@
 
 ## Next up
 
-  1. Go tour: I'm going to do this locally with `go tool tour`. 
-  1. Browse through some FAQs really fast to get a whirlwind: http://golang.org/doc/faq
+  1. [x] Go tour: I'm going to do this locally with `go tool tour`.
+  1. [x] Read FAQs: http://golang.org/doc/faq
+
   1. Read the language spec. No need to go super deep just yet... this is a first date. http://golang.org/ref/spec
   1. Effective Go: http://golang.org/doc/effective_go.html
   1. Work through the Go / Angular preso again: http://blog.campoy.cat/2013/12/writing-moder-web-app-with-go-tdd-rest.html
   1. Create a sample REST API for something dumb
   1. Read through some of the code recommended by Jeff Hodges: http://www.somethingsimilar.com/2013/12/27/code-to-read-when-learning-go/
 
-## Some impressions
+## Learning from the Tour
 
 1. I *really* like go's implementation of multiple returns as well as naming those return values in the function signature:
 
@@ -430,6 +431,17 @@ Go's headless, built-in functions are documented in package `builtin`: http://go
 
 
 
+## Learning from the FAQ
+
+- The theme here is simple, easy, correct, small. No ceremony. Example: http://golang.org/doc/faq#Does_Go_have_a_ternary_form
+- Check out this sample test http://golang.org/src/pkg/fmt/fmt_test.go for an example of how they do it internally... data-driven tests
+- There's a good trick in there for using the _ identifier for dealing with debug statements
+- here's a long writeup on profiling go programs: http://blog.golang.org/2011/06/profiling-go-programs.html
+- Goven (https://github.com/kr/goven) is a tool for copying dependencies locally if you don't want your build system, etc to be pulling from master on public repos
+- http://golang.org/doc/faq#methods_on_values_or_pointers has a clear explanation on pointers vs values
+    - **Pointer types behave in the same manner as Java**... it's value types that are different. Think: in Java, if you pass a map instance and update it, that update is visible outside the method context. In Go, that's what happens with pointer types. Go **always** passes a copy of the argument; so if the copy is a value type, any updates to it will not be visible outside the function context because you're updating a copy of a value, not a copy of a pointer and consequently you're interacting with different memory space
+
+
 
 ## Questions after taking the Go tour
 
@@ -447,7 +459,11 @@ for _, v := range some_slice {}
 
 1. What simple hacks are people using to auto-build go, such that you can effectively use it as a scripting language?
 
+  - seems like `go run my_file.go` gets it done
+
 1. Does go have something like list comprehensions? Kickass operators ala groovy? (http://groovy.codehaus.org/Operators)
+
+  - haha. After reading the FAQ, the message on that is loud and clear. FU. Sugar is not this language's deal.
 
 1. For channels, how do you deal with errors?
 
