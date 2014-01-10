@@ -17,24 +17,18 @@
 
 ## Questions after getting started
 
-  - what is * in function signatures, such as TestSqrt(t *Testing)?
-  - do other test frameworks exist? I wonder what niceties people are using on top of `testing`
-  - I'm (sadly) enamored with Intellij and use it for all my current coding... I wish I could get the Intellij Go plugin working (https://github.com/mtoader/google-go-lang-idea-plugin). Alas, it ain't happening
-  - How are typical go projects structured? (Will learn more as working through the Effective Go book)
-  - For web apps, are people using straight up Go, a framework, something else? What about HTML templating? 
-  - How are people "watching" files have having them auto built / installed? This manual reinstall bullshit is.... bullshit.
-  - Can this be considered a suitable replacement for a scripting language such as Python for every-day scripty things?
+
 
 ## Next up
 
   1. [x] Go tour: I'm going to do this locally with `go tool tour`.
   1. [x] Read FAQs: http://golang.org/doc/faq
-
   1. Read the language spec. No need to go super deep just yet... this is a first date. http://golang.org/ref/spec
   1. Effective Go: http://golang.org/doc/effective_go.html
   1. Work through the Go / Angular preso again: http://blog.campoy.cat/2013/12/writing-moder-web-app-with-go-tdd-rest.html
   1. Create a sample REST API for something dumb
   1. Read through some of the code recommended by Jeff Hodges: http://www.somethingsimilar.com/2013/12/27/code-to-read-when-learning-go/
+  1. Found this, too: http://www.golang-book.com/
 
 ## Learning from the Tour
 
@@ -455,8 +449,6 @@ for _, v := range some_slice {}
 ```
 
 
-
-
 1. What simple hacks are people using to auto-build go, such that you can effectively use it as a scripting language?
 
   - seems like `go run my_file.go` gets it done
@@ -470,6 +462,59 @@ for _, v := range some_slice {}
 1. What are go architectural idioms for dealing with backpressure in distributed systems?
 
 1. I need to learn more about buffered channels. I don't understand why Go tour #66 gives the `all routines are asleep` error message when changing the buffer size to 1
+
+1. what is * in function signatures, such as TestSqrt(t *Testing)?
+
+  - it indicates that the function expects a pointer argument of type Testing. Presumably the test framework passes this in
+
+1. do other test frameworks exist? I wonder what niceties people are using on top of `testing`
+
+  - Lots! http://code.google.com/p/go-wiki/wiki/Projects#Testing
+  - note there are libs for xunit output and also coverage, as well.
+
+1. I'm (sadly) enamored with Intellij and use it for all my current coding... I wish I could get the Intellij Go plugin working (https://github.com/mtoader/google-go-lang-idea-plugin). Alas, it ain't happening
+
+  - Got it. They released an update and it now works for me. However, I had to go through some hoops and it's still not working as I'd expect it to with respect to startup, but that's ok.
+
+  Here's what I did (on a Mac):
+
+  1. create ~/.profile
+  1. Give it these contents:
+
+  ```
+  export GOPATH=~/dev/projects/go/go-play
+  export GOROOT=/usr/local/go
+  launchctl setenv GOPATH $GOPATH
+  ```
+  1. start idea from the command line: `source ~/.profile && ~/Applications/IntelliJ\ IDEA\ 13.app/Contents/MacOS/idea`
+  1. Added that as a bash alias because screw that noise: `alias idea='source ~/.profile && ~/Applications/IntelliJ\ IDEA\ 13.app/Contents/MacOS/idea'`
+
+  According to https://github.com/go-lang-plugin-org/go-lang-idea-plugin/issues/456, it seems that after setting ~/.profile I shouldn't have to do this. However, launching Intellij from Spotlight gives me the "undefined GOROOT" stuff
+
+  1. Running tests from Intellij still doesn't work. No biggie... just annoying.
+    - oh, wait, got it, though it's weird and perhaps my own dumb fault.
+    - I had to go into the test configuration and change the package from "main" to the other value in the dropdown, which was the full package path.
+
+1. How are typical go projects structured? (Will learn more as working through the Effective Go book)
+
+  - Still need to learn this
+
+1. For web apps, are people using straight up Go, a framework, something else? What about HTML templating?
+
+  - Looks like you can do fairly well with straight Go: http://golang.org/doc/articles/wiki/
+  - But there are a fair number of frameworks and toolkits: http://code.google.com/p/go-wiki/wiki/Projects#Frameworks_and_Toolkits
+    - Revel seems to be popular, and Martini was recommended to me as the current hotness
+
+
+1. How are people "watching" files have having them auto built / installed? This manual reinstall bullshit is.... bullshit.
+
+  - It looks like some of the web frameworks, such as Revel, handle this.
+  - What else if you're working on non-web apps?
+
+1. Can this be considered a suitable replacement for a scripting language such as Python for every-day scripty things?
+
+  - Looks like `go run my_file.go` will do just fine
+
 
 
 ## Error messages
