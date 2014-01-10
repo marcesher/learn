@@ -487,7 +487,7 @@ for _, v := range some_slice {}
   export GOROOT=/usr/local/go
   launchctl setenv GOPATH $GOPATH
   ```
-  
+
   1. start idea from the command line: `source ~/.profile && ~/Applications/IntelliJ\ IDEA\ 13.app/Contents/MacOS/idea`
   1. Added that as a bash alias because screw that noise: `alias idea='source ~/.profile && ~/Applications/IntelliJ\ IDEA\ 13.app/Contents/MacOS/idea'`
 
@@ -505,7 +505,7 @@ for _, v := range some_slice {}
 
   - Looks like you can do fairly well with straight Go: http://golang.org/doc/articles/wiki/
   - But there are a fair number of frameworks and toolkits: http://code.google.com/p/go-wiki/wiki/Projects#Frameworks_and_Toolkits
-    - Revel seems to be popular, and Martini was recommended to me as the current hotness
+    - Revel seems to be popular, and Martini was recommended to me as the current hotness. Gorilla was also recommended, as it's a toolkit and not a framework.
 
 
 1. How are people "watching" files have having them auto built / installed? This manual reinstall bullshit is.... bullshit.
