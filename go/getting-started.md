@@ -440,7 +440,7 @@ Go's headless, built-in functions are documented in package `builtin`: http://go
 - Goven (https://github.com/kr/goven) is a tool for copying dependencies locally if you don't want your build system, etc to be pulling from master on public repos
 - http://golang.org/doc/faq#methods_on_values_or_pointers has a clear explanation on pointers vs values
     - **Pointer types behave in the same manner as Java**... it's value types that are different. Think: in Java, if you pass a map instance and update it, that update is visible outside the method context. In Go, that's what happens with pointer types. Go **always** passes a copy of the argument; so if the copy is a value type, any updates to it will not be visible outside the function context because you're updating a copy of a value, not a copy of a pointer and consequently you're interacting with different memory space
-
+- Structs in go are crazy and awesome. They are pretty much like Maps in other language. But they're also used as the receiver of functions. The FAQ, one time, referred to structs parenthetically as "classes". So they're like this cut-the-bullshit approach to classes... we all know that classes are just data and methods (ignoring hierarchy for the moment), and so Go seems to implement that as simply as possible. I like it.
 
 
 ## Questions after taking the Go tour
