@@ -369,7 +369,8 @@ On Slide #66, if I change the buffer size to 1, I get the `all goroutines are as
 
 To pull values off of a channel until it closes:
 
-```for i := range c {
+```
+for i := range c {
 ...
 ```
 
@@ -486,6 +487,7 @@ for _, v := range some_slice {}
   export GOROOT=/usr/local/go
   launchctl setenv GOPATH $GOPATH
   ```
+  
   1. start idea from the command line: `source ~/.profile && ~/Applications/IntelliJ\ IDEA\ 13.app/Contents/MacOS/idea`
   1. Added that as a bash alias because screw that noise: `alias idea='source ~/.profile && ~/Applications/IntelliJ\ IDEA\ 13.app/Contents/MacOS/idea'`
 
