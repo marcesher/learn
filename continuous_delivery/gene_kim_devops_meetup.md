@@ -118,7 +118,7 @@ set of principles from which these devops are derived
 - this is the flow through the value stream
 - Understand the flow of work
 - Always seek to increase flow
-- Never unconsciously pass defects downstream
+- Never consciously pass defects downstream
 - never allow local optimization to cause global degradation
 - Achieve profound understanding of the system
 
