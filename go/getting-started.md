@@ -508,7 +508,7 @@ for _, v := range some_slice {}
     - Revel seems to be popular, and Martini was recommended to me as the current hotness. Gorilla was also recommended, as it's a toolkit and not a framework.
 
 
-1. How are people "watching" files have having them auto built / installed? This manual reinstall bullshit is.... bullshit.
+1. How are people "watching" files have having them auto built / installinstalled? This manual reinstall bullshit is.... bullshit.
 
   - It looks like some of the web frameworks, such as Revel, handle this.
   - What else if you're working on non-web apps?
