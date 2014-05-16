@@ -4,7 +4,7 @@ Details: http://itrevolution.com/heres-how-the-amazing-twitter-infosec-team-help
 
 Slides: http://www.slideshare.net/xplodersuv/putting-your-robots-to-work-14901538
 
-Watch: http://videos.2012.appsecusa.org/video/54250716
+Watch: http://vimeo.com/channels/appsecusa/54250716
 
 
 "We're on the product security team at Twitter, which means we work on code that ships"
