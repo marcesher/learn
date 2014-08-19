@@ -7,7 +7,6 @@ Director of Enterprise Apps at Promontory Interfinancial Network
 
 Slides will be on slideshare
 
-Question for self: Is anyone from our security team here?
 
 Promontory Interfinancial Network builds software for banks
 

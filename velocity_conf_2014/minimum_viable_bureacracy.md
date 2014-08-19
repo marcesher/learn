@@ -4,6 +4,8 @@ Laura Thomson, Mozilla
 
 @lxt
 
+https://speakerdeck.com/lauraxt/minimum-viable-bureaucracy-june-2014-edition
+
 "your approach scales until it doesn't"
 
 team/company size is the same... things scale linearly, then blow up, then you rearchitect
@@ -164,7 +166,7 @@ proof of concept + momentum == gets people motivated, makes the path clear
 
    - recruit
    - support, transmit, guide culture
-   - entorship
+   - mentorship
    - prioritization
    - big picture
    - do things no one else wants to do
@@ -176,7 +178,7 @@ proof of concept + momentum == gets people motivated, makes the path clear
   - enabling is more important than doing, but she says don't stop coding
   - introverts make great servant leaders
 
-  - she lists the 10 traits of a servant leader... go get her slides
+  - she lists the 10 traits of a servant leader... See slide 66 at https://speakerdeck.com/lauraxt/minimum-viable-bureaucracy-june-2014-edition
 
 ## Marketing / visibility
 
