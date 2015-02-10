@@ -118,7 +118,7 @@ fmt.Println(p[2:5])
 fmt.Println(p[1:])
 ```
 
-**Note**: Creating a new clice variable, such as with `q := p[2:5]`, is a reference to the same underlying array. It is not a copy.
+**Note**: Creating a new slice variable, such as with `q := p[2:5]`, is a reference to the same underlying array. It is not a copy.
 
 
 **Be Careful**: range semantics might seem weird: Subtract 1 from the right hand to get the true slice;
