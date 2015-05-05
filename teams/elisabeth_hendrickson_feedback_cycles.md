@@ -85,4 +85,4 @@ She says her role is "Care and feeding of feedback cycles"
 ## Learning organizations
 
 - fast feedback creates learning organizations
-- 
+-
