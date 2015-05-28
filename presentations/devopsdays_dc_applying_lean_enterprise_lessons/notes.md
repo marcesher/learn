@@ -35,3 +35,7 @@ Typically that means adding more user-journey tests, employing good architectura
 and making sure all new code written on the feature uses test-driven development (good engineers will already use TDD).
 
 we must then pull the lever hard in the other direction, kill the momentum, and transition our focus from building the right thing to building the thing right.
+
+The final — and too often forgotten — members of the team are customers and users.
+It is easy to fall into the trap of seeing them as simply a consumer of the solution we have created.
+In fact, they are critical stakeholders.
