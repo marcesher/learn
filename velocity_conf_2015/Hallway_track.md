@@ -23,17 +23,23 @@ Notes from conversations I had at Velocity
 - kids and music
   - really fun conversation with a guy about kids and their musical preferences, how they figure out what they like, etc
   - also fun talking about kids and cartoons
-  - "fuck you Caiyou. You don't know shit"
+  - "fuck you Caillou. You don't know shit"
 
 - Mike Loukides, o'reilly
-  - putting on the "Cultivate" conference again, right before oscon (Monday and Tuesday)
-  - "Team Geek": book by oreilly about managing teams (?)
+  - putting on the "Cultivate" conference again, right before oscon (Monday and Tuesday; oscon is m-f, with tutorials on m-t)
+    - http://www.oscon.com/open-source-2015/public/content/cultivate#speaker-row
+  - "Team Geek": book by oreilly about managing teams (?) or maybe it's just being a better teammate, how teams work. Need to investigate.
+    - cool... check it out on safari b/c we get a 3-month subscription with velocity admission
   - he has a phd in literature and taught freshman english... cool!
+  - Talked about the challenges of editing certain authors, and the cost of challenging authors not just being in the first book, but in subsequent books... you did a ton of editing work on the first version, and you know the second edition will require the same... A really interesting point I hadn't considered.
+
 
 - Go BoF at lunch
   - talked about how all of us got into Go
-  - Jason, new product manager for Go
+  - Jason (Burberell?; forgot to write it down), new product manager for Go
   - told us they're actively working with JetBrains on the go plugin
   - talking to Yourkit about what kind of interest would be required for them to add Go support
   - I told him that I thought IDE and Profiling were huge gaps right now and improving those stories would help drive adoption
+  - talking to another dude at the table about pitfalls of Go. He said he spent a lot of time fighting with mutability (in channels, I think), and that go let him get away with mutating things from different threads. Wish I had prodded him on this more to better understand. It sounds like a case of "yer doin it wrong", but I think his point is that the language didn't prevent him from doing something dumb... not sure
+  
 
