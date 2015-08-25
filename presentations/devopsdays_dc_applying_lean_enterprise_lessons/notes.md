@@ -8,7 +8,7 @@ hypothesis as soon as possible with real customers should be applied at the star
 
 Whenever you hear of a new IT project starting up with a large budget, teams of tens or hundreds of people,
 and a timeline of many months before something actually gets shipped, you can expect the project will go over time and
-budget and not deliver the expected
+budget and not deliver the expected value.
 
 Limiting initial investment and creating resource scarcity is essential to managing the risk of innovation.
 Given that most innovative ideas we have will not succeed, we must come up with simple, quick experiments to eliminate
