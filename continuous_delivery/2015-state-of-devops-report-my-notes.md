@@ -84,30 +84,20 @@ Per John Kotter, _Leading Change_, establishing a sense of urgency is the first 
 I'm just gonna copy/paste:
 
 Common problems include:
-•
-Changes that often result in failures and are difficult 
+- Changes that often result in failures and are difficult 
 to diagnose and fix.
-•
-Dev, test, and staging environments that are different from 
+- Dev, test, and staging environments that are different from 
 production environments, causing failures when builds are 
 promoted across environments.
-•
-Lots of manual work required to deploy.
-•
-Lots of handoffs between teams, resulting in slow, 
+- Lots of manual work required to deploy.
+- Lots of handoffs between teams, resulting in slow, 
 inefficient deployments.
 The countermeasures that should be implemented include:
-•
-Do smaller deployments more frequently (i.e., decrease batch sizes).
-•
-Automate more of the deployment steps.
-•
-Treat your infrastructure as code, using a standard configuration 
+  - Do smaller deployments more frequently (i.e., decrease batch sizes).
+  - Automate more of the deployment steps.
+  - Treat your infrastructure as code, using a standard configuration 
 management tool.
-•
-Implement version control for all production artifacts.
-•
-Implement automated testing for code and environments.
-•
-Create common build mechanisms to build dev, test and 
+  - Implement version control for all production artifacts.
+  - Implement automated testing for code and environments.
+  - Create common build mechanisms to build dev, test and 
 production environments
