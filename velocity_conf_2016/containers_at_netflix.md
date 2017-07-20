@@ -28,7 +28,7 @@ Lessons learned from batch
   - docker helped generalize use cases
   - advanced scheduling required... as work comes and goes, they scale up/down the underlying resource pool
   - initially ignored failures, with retries
-     - really needed to get oprationally mature, reliable
+     - really needed to get operationally mature, reliable
   - time-sensitive batch came later... people needed it not tomorrow morning, but within the next hour
   
   Usage:
@@ -40,7 +40,7 @@ Lessons learned from batch
   - they initially thought it'd make life easier, make ti more scalable, etc. 
   in reality, this isn't that big a deal for them b/c they already have a rock solid VM system
   
-  - the big benefit was the "underserved communities"... teamd who didn't want to use apache and tomcat
+  - the big benefit was the "underserved communities"... teams who didn't want to use apache and tomcat
   - so for example, a nodejs app just didn't have an on-ramp into production
   - i.e. their whole stack was java-centric
   - another use case: I want an instance with a single core to run my lightweight server
