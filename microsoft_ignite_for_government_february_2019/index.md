@@ -2,7 +2,8 @@
 
 # Microsoft Ignite for Government -- February 2019
 
-Monday morning notes
+**Monday morning notes**
+
   - Check out VS Code "Live Share"
     - I tried this out later... really easy to get set up, and it uses a secure shared tunnel to communicate
     - you can share with up to 5 people at a time
