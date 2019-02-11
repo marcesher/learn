@@ -8,4 +8,4 @@ Monday morning notes
     - you can share with up to 5 people at a time
     - Could be a great solution for remote pairing, which we've been looking for since our previous go-to solution got acquired by Slack and then went away
 
-Microsoft Teams -- [My notes](teams)
+Microsoft Teams -- [My notes](teams.md)
