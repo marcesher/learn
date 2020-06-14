@@ -68,7 +68,7 @@ probably the biggest hurdle right now, he says, is that people really don't unde
 - finance and accounting
 - marketing (eg social media)
 - Forms (he says this is  a really big one)
-  - I'm thinking: PUA! man f*ck our current pua process. f*ck it so much
+  - I'm thinking: PUA! man fuck our current pua process. 
   
 He says you can use MS Flow in the background for simple forms, and "Power Apps" for more complex forms. Power Apps is tougher to integrate into the bot b/c it's not native (or something) but it is possible (I think)
 
