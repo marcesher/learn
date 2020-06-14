@@ -1,0 +1,64 @@
+Sidney's 5th grade class (4 total homerooms). 15 mins each, but leave time for questions so really shoot for 10-12 mins or so
+
+Prompts:
+
+- what exactly do you do? what is a typical day like?
+- what are your working conditions like?
+- what kind of education / training does it take to do your profession?
+- what kind of school subjects prepare a person for this career?
+- what type of personality / abilities are needed for your job?
+- why did you choose this career?
+- what is the best thing about your job? the least liked thing?
+- anything else that you feel is necessary to help your young children begin the process of thinking about career opportunities
+
+
+
+Intro:
+
+- hold up a phone, "I know that most of you know what this is, and probably have one like it, or an ipod, or your parents probably have something like it" and go with that kind of shtick... trying to show them what software is and how they know it in their lives already
+
+  - or, maybe, "how many of you know what this is?" -- check this out... turn it on, use Face ID, take a selfie, "and I can edit it from this gizmo", and I can share that with email or text... all of that requires software... computer programming.
+
+
+- Games they play on their phones, xboxes, computers, etc
+- software in cars
+- software in refrigerators
+- you use google chromebooks... and you use google docs, and slides, and you use quizlet and wordle... all of those are made by teams of people who build applications with software
+
+When I say software, I mean computer programs. Using a computer to write code, and that code tells computers and phones and game consoles and refrigerators and all kinds of things what to do and how to behave and what to look like when you interact with those devices
+
+So, what I do is that I am a software developer. Well, actually, that's not 100% true. I'm a Software Development Manager, which means I'm a boss of other software developers. But I still do write software, and I was a software developer for many years. And I work all day with teams of people who work together to create software applications. 
+
+The type of computer software that I've worked on all my career is software for the internet... 
+the web. My teams and I write web-based software, which means that it runs in a web browser. You use web software all the time... google docs, slides, quizlet, and so on.
+
+and I work for the federal government. I think you've studied the government in your social studies class. Well, the government is really big, and I work for a tiny part of the government that helps educate americans about money and helps protect americans from banks getting too greedy and treating people unfairly. 
+
+My teams write web based applications that help the place where i work do those types of things. 
+
+One of the things I really love about my job is that I get to work on things that in some small ways helps Americans. It's how I serve my community. Some people are firemen and women and police men and women and soldiers and teachers and they all serve in different ways. I serve by writing software.
+
+
+I work on a computer most of the day, and so do my colleagues who are software developers. We use our computers to write computer code. And because nearly everything we do takes a bunch of people, we have to talk a lot together and work closely together. So we spend a lot of time on the phone and video chat as well... kinda like Facetime.
+
+For my particular place where I work, I work from home. Many of my team mates work from home, too. Some of them work in our office in Washington DC. I work with people all across the country, as far away as California.
+
+To learn how to become a software developer, you can start a couple of different ways
+- self-taught
+- take classes, here at school or on the internet or at the local library
+- take college classes or classes at a technical school
+- and often, a mix of all of those
+
+One thing that I've learned about being a software developer is that you never stop learning. Technology moves and changes so fast, and there's always something new to learn. So even if you go to classes to become a computer programmer, you'll still spend a lot of time learning more and more and more throughout your career. I've learned that knowing how to teach yourself is a really important skill.
+
+I bet you all are really good at that already. YOu've probably taught yourself how to play games that your parents don't know how to do, or teach yourself new stuff in sports
+
+Some other personality traits that are helpful for a career in software development are curiosity, and patience, and persistence. When I say curiosity, I mean being able to wonder about things and think about what ifs. If you've ever played minecraft you might have wondered "how can I make a roller coaster" or "how can I turn this pig into bacon". Or if you're on Tiktok you might have wondered "how can I do this kind of transition". Well, that curiosity, that wondering "how can I" or "I wonder if" is hugely important in programming because often you are asked to do things that are new to you, or you have to think about new ways of solving problems, or you have to fix your code when it breaks and you're not sure what's broken about it.
+
+Persistence and patience are really important to because believe it or not, when you're writing computer code -- which is telling the computer what to do -- it's actually kinda hard. And knowing how to do it isn't always obvious. LIke, check this out: when I open up my phone wiht my face, that's not magic. That's a bunch of computer programmers figuring out how to use the image that's coming through the camera and figure out how to determine, in code, if that's a face, and if it's the face I've been trained to see as the face that should open this phone, and just that face, no other face. It's hard, and it sometimes can take  a long time to figure out how to do stuff and make your programs work.
+
+I remember when I was a kid, with my very first computer, I had a book that taught basic programming. I was probably 10 years old. And I was so excited to learn to program, and it was to make a tiny little stick figure on the computer and make it move, kinda like dancing. well, I thought I did everything right, and then I tried to run the program, and he was missing an arm and his leg was sticking out sideways instead of standing on the ground!  And 35 years later I still have days like that where it seems like no matter what I tell the computer to do with my code, it doesn't want to cooperate
+
+Finally, a lot of software development is working with other people. So it's really important to know how to collaborate and cooperate and communicate with other humans. YOu know how you work in groups a lot in class and on the playground? well... a lot of software development is like that... working with others to accomplish things. It's not just sitting in front of a computer all day every day. Although it can be like that if you have that type of computer programming job. 
+
+Last thing: how I got into programming. Well, I didn't initially go to college for software development. In fact, I went to college to be an English teacher, and I taught high school English for several years. But in college, I learned how to program a bit, and I loved it, and eventually I decided I wanted to do that instead because I just loved the idea that I could write software that could make websites, and I knew I could get paid to do that, and so I taught myself even more about programming, and fell more in love with it, and then went to school to learn more, and eventually got a job and that's what I've been doing for 20 years.

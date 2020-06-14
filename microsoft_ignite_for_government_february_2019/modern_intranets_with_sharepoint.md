@@ -1,5 +1,5 @@
-Modern Intranet with Sharepoint
---------------------------------
+# Modern Intranet with Sharepoint
+
 
 huh... this room is packed. probably the most packed session I've been in so far
 
@@ -13,10 +13,10 @@ Just go get her slides... I'll take notes on the highlight reel
 - observe users where they work. you'll never get the answers you need by asking them on the phone
 - she thinks one of the most important jobs of a modern intranet is to build community and culture
 - says that people profiles are a key here; also ability to roll up "events" (whatever that means); yammer praise and posts, and sharepoint news stories
-- she's saying that yammer is really important for building communities of practice; start a CoP with a yammer community, and then build a sharepoint communications site for that CoP. This all sounds extremely similar to what we had at booz allen 9 years ago
+- she's saying that yammer is really important for building communities of practice; start a CoP with a yammer community, and then build a sharepoint communications site for that CoP. (This all sounds extremely similar to what we had at booz allen 9 years ago)
 - "Stream": a youtube-like way to create youtube like videos for how to do things in your org. she says think of it as your internal youtube channel
 - she says all these tools are 100% mobile out of the box, unlike having to mobile-ize your current internal thing
-- EDITORIAL: all of this is making me think about the LEAD act and its provisions for Intranets; seems like this all checks those boxes
+- EDITORIAL: all of this is making me think about the IDEA act and its provisions for Intranets; seems like this all checks those boxes
 - more EDITORIAL: I used yammer back at booz. Based on what I know of it back then, I have a hard time seeing how you'd want to use it instead of teams. How has teams not killed yammer?
 - For day-to-day activities, I see "Flow" and "PowerApps" for tasks and approvals; these came up yesterday too and reminds me a bit of the outlook session with Actionable Messages and the bot session which was all about interacting with a bot to get stuff done
 - importance of really good search; apparently all of this stuff has really good search
